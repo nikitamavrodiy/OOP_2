@@ -68,10 +68,10 @@ public class flower {
 
     public String toString() {
         return "Название: " + getName() +
-                "\nСтрана происхождения: " + getCountry() +
-                "\nЦвет: " + getFlowerColor() +
-                "\nСтоимость: " + getCost() + " рублей" +
-                "\nСрок стояния цветка: " + getLifeSpan() + " дн.\n";
+                "  Страна происхождения: " + getCountry() +
+                "  Цвет: " + getFlowerColor() +
+                "  Стоимость: " + getCost() + " руб." +
+                "  Срок стояния цветка: " + getLifeSpan() + " дн.";
     }
     public static void addToBouquet(flower flower) {
         addToBouquet(flower, 1);
@@ -94,9 +94,9 @@ public class flower {
             }
         }
 
-        System.out.println("букет, в котором есть: ");
+        System.out.print("Букет, в котором есть:");
         composition();
-        System.out.println("будет стоить " + Math.floor((bouquetCost*1.1) * 100) / 100 + " рублей и простоит " + bouquetLifeSpan + " суток.");
+        System.out.println(" -- будет стоить " + Math.floor((bouquetCost * 1.1) * 100) / 100 + " руб. и простоит " + bouquetLifeSpan + " суток.");
     }
 
     public static void composition() {
@@ -105,11 +105,11 @@ public class flower {
             if (bouquet[i] == bouquet[i - 1]) {
                 counter++;
             } else {
-                System.out.println("  " + bouquet[i-1].getName() + " - " + counter);
+                System.out.print("  " + bouquet[i-1].getName() + "(" + counter + "), ");
                 counter = 1;
             }
         }
-        System.out.println("  " + bouquet[bouquet.length - 1].getName() + " - " + counter);
+        System.out.print("  " + bouquet[bouquet.length - 1].getName() + "(" + counter + ")");
 
     }
 
