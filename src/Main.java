@@ -38,7 +38,6 @@ public class Main {
         carDefault.insurance.isInsuranceValid();
         carDefault.insurance.isNumberValid();
 
-
     }
 
 }
