@@ -110,6 +110,5 @@ public class flower {
             }
         }
         System.out.print("  " + bouquet[bouquet.length - 1].getName() + "(" + counter + ")");
-
     }
 }
